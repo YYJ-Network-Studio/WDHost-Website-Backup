@@ -37,18 +37,29 @@
 							<h3>目錄</h3>
 							<p>後台指令、檔案操控教學 - <a href="1.html">點擊此閱讀</a></p>
 							<p>網站架設教學 - <a href="2.html">點擊此閱讀</a></p>
+							<p>Minecraft伺服器架設教學 - <a href="3.html">點擊此閱讀</a></p>
                             <h3>網頁伺服器架設軟體</h3>
                             <p>常見的網頁伺服器架設軟體有Apache及Nginx，作者我是推薦Nginx，選擇原因不在這裡多做陳述，想深入瞭解的話請看此文章：<a href="https://blog.beck-yeh.idv.tw/linux/web-server/nginx-vs-apache/">Apache vs Nginx該選哪個(中文文章)</a></p>
                             <h3>Nginx安裝教學</h3>
 							<p>1. 使用SSH連線至伺服器後台，登入後輸入下載Nginx指令</p><code>sudo apt install nginx</code>
-                            <blockquote>給新手的小幫助：sudo可以想成進入最高管理權限的按鈕(最高管理權限以下稱之為root)，只有root才能對系統做完整的更動，像是下載資料、帳戶更動等具有一定風險性的操作。因此，如果尚未進入root模式就打算下載資料，需要在開頭加上sudo，然後系統會要求輸入root密碼(密碼不會顯示，輸入完後按下Enter即可)，才可進行資料下載喔！</blockquote>
+                            <blockquote>
+							給新手的小幫助：sudo可以想成進入最高管理權限的按鈕(最高管理權限以下稱之為root)，
+							只有root才能對系統做完整的更動，像是下載資料、帳戶更動等具有一定風險性的操作。因此，
+							如果尚未進入root模式就打算下載資料，需要在開頭加上sudo，然後系統會要求輸入root密碼(密碼不會顯示，輸入完後按下Enter即可)，
+							才可進行資料下載喔！
+							</blockquote>
                             <p>2. 下載與安裝完畢後，開啟伺服器請輸入：<code>sudo systemctl start nginx</code></p>
                             <p>3. 此時打開電腦或手機等裝置的瀏覽器，輸入伺服器連線位置(IP)即可瀏覽網站！</p>
                             <h3>更改網站內容</h3>
                             <p>1. 移動至網站內容的存放路徑<code>cd /var/www/html</code></p>
                             <p>2. <code>index.html</code>代表網站的首頁，若要更改網站首頁，最簡單的方式就是將檔名更改為<code>index.html</code></p>
                             <p>3. 將前端檔案(HTML, CSS, JavaScript, 照片, 影片等)上傳至此(使用FTP或SFTP)，並重啟伺服器即可！</p>
-                            <blockquote>給新手的小幫助：不知道前端檔案(HTML, CSS, JavaScript)是什麼？簡單來講，就是網頁的程式碼(不過HTML算是標籤語言，不是程式語言)，這3個語言(HTML, CSS, JavaScript)，一個是架構、一個是美化、一個是增加一些動作&動畫，如果想深入瞭解的話請看此文章：<a href="https://ithelp.ithome.com.tw/articles/10202326">網頁前端3語言</a></blockquote>
+                            <blockquote>
+							給新手的小幫助：不知道前端檔案(HTML, CSS, JavaScript)是什麼？
+							簡單來講，就是網頁的程式碼(不過HTML算是標籤語言，不是程式語言)，
+							這3個語言(HTML, CSS, JavaScript)，一個是架構、一個是美化、一個是增加一些動作&動畫，
+							如果想深入瞭解的話請看此文章：<a href="https://ithelp.ithome.com.tw/articles/10202326">網頁前端3語言</a>
+							</blockquote>
                             <p>4. 重新啟動網頁伺服器<code>sudo systemctl restart nginx</code></p>
 						</div>
 					</section>

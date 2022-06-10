@@ -72,8 +72,9 @@
                             <p>3. 執行伺服器核心<code>java -Xmx1024M -Xms1024M -jar 伺服器核心名稱.jar</code></p>
                             <blockquote>
                             給新手的小幫助：
-                            <br>執行1.18.2<code>java -Xmx1024M -Xms1024M -jar paper-1.18.2-379.jar</code>
+                            <br>執行1.18.2<code>java -Xmx1024M -Xms1024M -jar paper-1.18.2-379.jar -Dlog4j2.formatMsgNoLookups=true</code>
 							<br>1024MB = 1GB以此類推，您也可以改成<code>-Xmx1G -Xms1G</code>
+							<br>防止Log4j漏洞請加上<code>-Dlog4j2.formatMsgNoLookups=true</code>
                             <br>請注意伺服器主機的RAM，假設您購買的伺服器為8G RAM，則分配給Minecraft伺服器的RAM必須小於8G RAM。
                             </blockquote>
                             <p>4. 同意eula條款<code>vi eula.txt</code>將false更改為true</p>
